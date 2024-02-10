@@ -1,3 +1,9 @@
+:root {
+    --bg-color : #020312;
+    --txt-color : #fcfbf8;
+    --calc-color : #b3081f;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,8 +13,8 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(202, 167, 235);
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
 }
 .wrapper {
     display: flex;
@@ -19,7 +25,9 @@ body{
     width: 65vh;
     margin: 30px;
     border-radius: 24px;
-    background-color: rgb(53, 36, 127);
+    background-color: var(--calc-color);
+    padding-left: 10px;
+    box-shadow: 10px 10px 8px gray;
 }
 
 .bill-wrapper {
@@ -38,16 +46,16 @@ input {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 95%;
-    height: 40px;
+    height: 45px;
     border-radius: 24px;
     border: none;
     outline: none;
-    background-color: gray;
+    background-color: #a04551;
     padding: 20px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    background-color: rgb(77, 79, 138);
-    color: white;
+    color: var(--txt-color);
+    box-shadow: 5px 5px 10px black;
 }
 
 .text {
@@ -57,10 +65,11 @@ input {
     height: 8%;
     justify-content: space-between;
     padding: 10px;
+    margin-top: 30px;
 }
 
 p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .calc {
@@ -87,13 +96,9 @@ button {
     height: 35px;
     border: none;
     font-size: xx-large;
-    background-color: blueviolet;
-    color: white;
-}
-
-#count-btn {
-    height: 50px;
-    width: 125px;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    box-shadow: 5px 5px 10px black;
 }
 
 button:hover {
@@ -101,6 +106,6 @@ button:hover {
 }
 
 button:active {
-    background-color: white;
+    background-color: var(--txt-color);
     color: blueviolet;
 }

@@ -11,9 +11,9 @@
         <div class="bill-wrapper">
             <form action="" method="">
                 <label for="bill-total">Bill Total</label><br>
-                <input type="text" id="bill-total" placeholder="$00.00" value="bill-total"><br>
+                <input type="text" id="bill-total" placeholder="$00.00" onkeyup="calculate()"><br>
                 <label for="tip">Tip ( % )</label><br>
-                <input type="text" id="tip" placeholder="00.00%"><br>
+                <input type="text" id="tip" placeholder="00.00%" onkeyup="calculate()"><br>
             </form>
         </div>
         <div class="text">
@@ -29,9 +29,6 @@
             <div class="total-price">
                 <p id="total">$00.00</p>
             </div>
-        </div>
-        <div class="count">
-            <button id="count-btn">Count</button>
         </div>
     </div>
     <script src="script.js"></script>
